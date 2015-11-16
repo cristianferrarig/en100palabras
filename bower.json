@@ -1,0 +1,20 @@
+{
+  "name": "rails-base",
+  "authors": [
+    "Cristian Ferrari <cristianferrarig@gmail.com>"
+  ],
+  "description": "Skeleton for new Rails based projects",
+  "directory": "vendor/bower"
+  "main": "",
+  "moduleType": [],
+  "license": "WTFPL",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
