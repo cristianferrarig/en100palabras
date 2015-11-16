@@ -29,5 +29,8 @@ module RailsBase
       g.template_engine :slim
     end
 
+    require './lib/sass_extensions' if defined?(Sass)
+
+
   end
 end
