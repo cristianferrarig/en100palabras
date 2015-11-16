@@ -4,7 +4,7 @@
     "Cristian Ferrari <cristianferrarig@gmail.com>"
   ],
   "description": "Skeleton for new Rails based projects",
-  "directory": "vendor/bower"
+  "directory": "vendor/bower",
   "main": "",
   "moduleType": [],
   "license": "WTFPL",
@@ -16,5 +16,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5"
+  }
 }
