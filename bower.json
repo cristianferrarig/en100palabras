@@ -6,7 +6,7 @@
   "description": "Skeleton for new Rails based projects",
   "directory": "vendor/bower",
   "main": "",
-  "moduleType": [],
+  "moduleType": "globals",
   "license": "WTFPL",
   "homepage": "",
   "private": true,
