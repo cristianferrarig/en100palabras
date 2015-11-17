@@ -27,6 +27,7 @@ module RailsBase
 
     config.generators do |g|
       g.template_engine :slim
+      g.assets false
     end
 
 
