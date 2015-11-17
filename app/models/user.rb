@@ -15,4 +15,5 @@ class User < ActiveRecord::Base
     end
   end
 
+  devise authentication_keys: [:login]
 end
