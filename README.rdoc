@@ -1,5 +1,10 @@
 == README
 
+Remixed resource
+https://medium.com/rails-ember-beyond/how-to-build-a-social-network-using-rails-eb31da569233
+https://github.com/fs/rails-base
+https://github.com/cristianferrarig/prelang_test/
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
