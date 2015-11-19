@@ -9,6 +9,7 @@ table
       th Age
       th City
       th Place
+      th Contest
       th
       th
       th
@@ -22,6 +23,7 @@ table
         td = story.age
         td = story.city
         td = story.place
+        td = story.contest
         td = link_to 'Show', story
         td = link_to 'Edit', edit_story_path(story)
         td = link_to 'Destroy', story, data: {:confirm => 'Are you sure?'}, :method => :delete

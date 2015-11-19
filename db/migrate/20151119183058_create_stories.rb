@@ -7,6 +7,7 @@ class CreateStories < ActiveRecord::Migration
       t.integer :age
       t.references :city, index: true, foreign_key: true
       t.references :place, index: true, foreign_key: true
+      t.references :contest, index: true, foreign_key: true
 
       t.timestamps null: false
     end
