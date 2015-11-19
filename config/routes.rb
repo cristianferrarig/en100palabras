@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :regions
   resources :contests
   resources :stories
   resources :cities
