@@ -1,0 +1,12 @@
+p#notice = notice
+
+p
+  strong Year:
+  = @contest.year
+p
+  strong Region:
+  = @contest.region
+
+= link_to 'Edit', edit_contest_path(@contest)
+'|
+= link_to 'Back', contests_path

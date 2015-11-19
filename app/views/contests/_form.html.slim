@@ -1,0 +1,9 @@
+= simple_form_for(@contest) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :year
+    = f.association :region
+
+  .form-actions
+    = f.button :submit
