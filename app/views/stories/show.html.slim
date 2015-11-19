@@ -1,0 +1,24 @@
+p#notice = notice
+
+p
+  strong Title:
+  = @story.title
+p
+  strong Body:
+  = @story.body
+p
+  strong Author:
+  = @story.author
+p
+  strong Age:
+  = @story.age
+p
+  strong City:
+  = @story.city
+p
+  strong Place:
+  = @story.place
+
+= link_to 'Edit', edit_story_path(@story)
+'|
+= link_to 'Back', stories_path

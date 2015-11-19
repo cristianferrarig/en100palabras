@@ -1,0 +1,31 @@
+h1 Listing stories
+
+table
+  thead
+    tr
+      th Title
+      th Body
+      th Author
+      th Age
+      th City
+      th Place
+      th
+      th
+      th
+
+  tbody
+    - @stories.each do |story|
+      tr
+        td = story.title
+        td = story.body
+        td = story.author
+        td = story.age
+        td = story.city
+        td = story.place
+        td = link_to 'Show', story
+        td = link_to 'Edit', edit_story_path(story)
+        td = link_to 'Destroy', story, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Story', new_story_path
