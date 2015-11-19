@@ -1,1 +1,15 @@
-{ "engines" : { "node": "4.1.2" } }
+
+{
+  "name": "en100palabras",
+  "version": "1.0.0",
+  "dependencies": {
+    "bower": "1.6.5"
+  },
+  "engines": {
+    "node": "4.1.2",
+    "npm": "3.3.9"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install"
+  }
+}
