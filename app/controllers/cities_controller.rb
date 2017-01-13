@@ -54,10 +54,17 @@ class CitiesController < ApplicationController
   # DELETE /cities/1
   # DELETE /cities/1.json
   def destroy
-    @city.destroy
-    respond_to do |format|
-      format.html { redirect_to cities_url, notice: 'City was successfully destroyed.' }
-      format.json { head :no_content }
+    if !@city.has_any_register?
+      @city.destroy
+      respond_to do |format|
+        format.html { redirect_to cities_url, notice: 'City was successfully destroyed.' }
+        format.json { head :no_content }
+      end
+    else
+      respond_to do |format|
+        format.html { redirect_to cities_url, notice: 'Esta comuna no se puede eliminar ya que tiene registros asociados.' }
+        format.json { head :no_content }
+      end
     end
   end
 

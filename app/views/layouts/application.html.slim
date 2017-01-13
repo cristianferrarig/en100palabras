@@ -11,7 +11,14 @@ html
     meta name="viewport" content="width=device-width, initial-scale=1"
 
   body
-    p.notice = notice
-    p.alert = alert
 
-    = yield
+    .container
+      .nav
+        li = link_to 'Regiones', regions_path
+        li = link_to 'Comunas', cities_path
+        li = link_to 'Lugares', places_path
+
+      p.notice = notice
+      p.alert = alert
+
+      = yield
